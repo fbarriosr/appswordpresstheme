@@ -44,6 +44,12 @@ get_header(); ?>
 	</article>
 	<?php get_sidebar(); ?>
 
+
+</div>
+<div>
+	<button class="hollow button" href="#">Primary</button>
+	<button class="hollow button warning" href="#">Warning</button>
+	<button class="hollow button success" href="#">Success</button>
 </div>
 
 <?php get_footer();

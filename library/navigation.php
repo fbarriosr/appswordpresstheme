@@ -128,7 +128,7 @@ if ( ! function_exists( 'foundationpress_breadcrumb' ) ) {
 				$parent = $queried_object->parent;
 
 				if( $parent ) {
-					$parents = [];
+					$parents = null;
 					// Loop through all term ancestors
 					while ( $parent ) {
 						$parent_term = get_term($parent, $tax);
