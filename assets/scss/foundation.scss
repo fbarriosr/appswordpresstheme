@@ -8,6 +8,8 @@
 */
 
 
+
+
 //  Settings
 @import "global/settings"; // Foundation settings file.
 @import "global/demosite-settings"; // These settings are only used for the demosite. Feel free to remove.
@@ -80,6 +82,194 @@
   Add your scss files below to structure your project styles
 */
 
+$body-background: white;
+$header-background: white;
+$footer-background: #0E3E71;
+$footer-color: white;
+$card-background: #F7F7F7;
+$card-textcolor: #777777;
+$card-titulocolor: #2691FB;
+$card-bordercolor: transparent;
+$card-paddingheader: 10px;
+$card-paddingright: 20px;
+$card-paddingbottom: 10px;
+$card-paddingleft: 20px;
+$btn-textcolor: #2691FB;
+$btn-bordercolor: #2691FB;
+$card2-background: #0E3E71;
+$card2-textcolor: white;
+$card2-titulocolor: #2691FB;
+$btn2-textcolor: white;
+$btn2-bordercolor: #2691FB;
+$header-textcolor: #0E3E71;
+
+$toplogopadding-left: 100px;
+$toplogopadding-top: 20px;
+
+$topmenupadding-top: 40px;
+$topmenupadding-right: 40px;
+
+
+/*
+La configuracion de orbit se cambia en global/_settings.scss 
+*/
+
+body {
+  background: $body-background;
+}
+header{
+  background: $header-background;
+  height: 120px;
+}
+
+div#example-menu {
+    height: 100%;
+    background: $header-background;
+}
+.top-bar, .top-bar ul {
+    background-color: $header-background;
+    /* height: 150px; */
+}
+.top-bar .menu > li:not(.menu-text) > a {
+    padding: 1rem;
+    color: $header-textcolor;
+}
+.top-bar .menu li:not(:last-child) {
+    border-right: 0px solid #4e4e4e;
+}
+
+.top-bar-left.hide-for-small-only {
+    padding-left: $toplogopadding-left;
+    padding-top: $toplogopadding-top;
+}
+
+.top-bar-right {
+    padding-top: $topmenupadding-top;
+    padding-right: $topmenupadding-right;
+}
+
+.footer {
+  background: $footer-background;
+  height: 210px;
+}
+.footerSocial {
+  padding-top: 20px;
+}
+
+.footermenu a, .footermenu p , .footerSocial p {
+  color: $footer-color;
+}
+
+.footermenu a , .footerSocial p {
+  font-size: 12px;
+}
+
+.footermenu p {
+ font-size: 10px;
+}
+hr {
+    margin-top: 0px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+.headermenu a, .headermenu p {
+  color: $header-textcolor;
+  font-weight: bold;
+}
+
+.card-section {
+	background: $card-background;
+  padding: $card-paddingheader $card-paddingright $card-paddingbottom $card-paddingleft;
+}
+
+.card-section p {
+  color: $card-textcolor;
+}
+
+.card-section h5 {
+  color: $card-titulocolor;
+  text-transform: uppercase;
+}
+.card2-section {
+  height: 100%;
+}
+
+.card.columns{
+  padding: 0px;
+  border-color: $card-bordercolor;
+}
+button.hollow.button {
+  color:$btn-textcolor;
+  border-color: $btn-bordercolor; 
+}
+
+nav.orbit-bullets{
+  top:-50px; 
+}
+
+.card2-section {
+  background: $card2-background;
+}
+.card2-section p {
+  color: $card2-textcolor;
+}
+
+.card2-section h5 {
+  color: $card2-titulocolor;
+  text-transform: uppercase;
+}
+button.hollow.button.button2 {
+  color:$btn2-textcolor;
+  border-color: $btn2-bordercolor; 
+}
+
+.orbit-caption {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    /* padding: 10px; */
+    position: absolute;
+    bottom: 50%;
+    /* vertical-align: top; */
+    /* width: 30%; */
+    /* margin-bottom: 0; */
+    /* margin-left: 40px; */
+    padding: 1rem;
+    background-color: transparent; 
+    color: #1779ba;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+//Medias Queris
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+.card2 {
+  margin-bottom: 0px;
+  border-bottom: 0px;
+
+}
+.card2-section {
+  border-top: 0px;
+}
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
 // Modules
 @import "modules/navigation";
 @import "modules/content";
@@ -97,3 +287,6 @@
 @import "templates/front";
 @import "templates/kitchen-sink";
 @import "templates/demosite"; // This template is used for the demosite. Feel free to remove.
+
+
+

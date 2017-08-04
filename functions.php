@@ -14,6 +14,9 @@
  * @since FoundationPress 1.0.0
  */
 
+/**  para agregar imagenes miniaturas */
+add_theme_support('post_thumbnails');
+
 /** Various clean up functions */
 require_once( 'library/cleanup.php' );
 
