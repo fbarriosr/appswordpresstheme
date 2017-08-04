@@ -26,7 +26,7 @@
 	<header class="site-header" role="banner">
 		<div class="row title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
 		  <div class="columns small-10">
-		  	 <img class="align-right"src="<?php bloginfo('template_directory'); ?>/assets/images/umbrella-logo.png"  alt="Space" style="width:233px ,height: 100px"></li>
+		  	 <img class="align-right" src="<?php bloginfo('template_directory'); ?>/assets/images/umbrella-logo.png"  alt="Space" style="width:233px ,height: 100px"></li>
 		  </div>
 		  <div class="columns small-2 align-right">
 		  	 <button class="menu-icon" type="button" data-toggle="example-menu"></button>
