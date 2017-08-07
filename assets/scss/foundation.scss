@@ -110,136 +110,126 @@ $topmenupadding-top: 40px;
 $topmenupadding-right: 40px;
 
 
-/*
-La configuracion de orbit se cambia en global/_settings.scss 
-*/
-
 body {
-  background: $body-background;
+  background-color: #1879B1;
 }
-header{
-  background: $header-background;
-  height: 120px;
+h1 ,h2, h3, p, a{
+  font-family: 'Montserrat';
+  color: white;
 }
-
-div#example-menu {
-    height: 100%;
-    background: $header-background;
-}
-.top-bar, .top-bar ul {
-    background-color: $header-background;
-    /* height: 150px; */
-}
-.top-bar .menu > li:not(.menu-text) > a {
-    padding: 1rem;
-    color: $header-textcolor;
-}
-.top-bar .menu li:not(:last-child) {
-    border-right: 0px solid #4e4e4e;
-}
-
-.top-bar-left.hide-for-small-only {
-    padding-left: $toplogopadding-left;
-    padding-top: $toplogopadding-top;
-}
-
-.top-bar-right {
-    padding-top: $topmenupadding-top;
-    padding-right: $topmenupadding-right;
-}
-
-.footer {
-  background: $footer-background;
-  height: 210px;
-}
-.footerSocial {
-  padding-top: 20px;
-}
-
-.footermenu a, .footermenu p , .footerSocial p {
-  color: $footer-color;
-}
-
-.footermenu a , .footerSocial p {
-  font-size: 12px;
-}
-
-.footermenu p {
- font-size: 10px;
-}
-hr {
-    margin-top: 0px;
-    margin-left: 14px;
-    margin-right: 14px;
-}
-.headermenu a, .headermenu p {
-  color: $header-textcolor;
+h2 {
   font-weight: bold;
+  font-size: 36px;
+}
+p{
+  opacity: 0.8;
+  font-size: 18px;
 }
 
-.card-section {
-	background: $card-background;
-  padding: $card-paddingheader $card-paddingright $card-paddingbottom $card-paddingleft;
+#javiera.callout{
+ 
+/* background-color: #1879B1;
+ position: relative;
+ top: 50%;
+ transform: perspective(1px) translateY(-50%);
+ border-width: 0px;
+   */
+  
 }
 
-.card-section p {
-  color: $card-textcolor;
+.tabs-content{
+  background-color: #1879B1;
+  border-width: 0px;
+
 }
 
-.card-section h5 {
-  color: $card-titulocolor;
-  text-transform: uppercase;
-}
-.card2-section {
-  height: 100%;
+.appsRow{
+  padding: 20px;
 }
 
-.card.columns{
-  padding: 0px;
-  border-color: $card-bordercolor;
-}
-button.hollow.button {
-  color:$btn-textcolor;
-  border-color: $btn-bordercolor; 
+figure.btn img {
+  border:0px;
+  border-radius: 15px;
 }
 
-nav.orbit-bullets{
-  top:-50px; 
+
+button{
+  opacity: 1.0;
+  width: 76px;
+  height: 76px;
+  font-weight: regular;
+  font-size: 14px;
+}
+button:hover{
+  opacity: 1.0;
 }
 
-.card2-section {
-  background: $card2-background;
-}
-.card2-section p {
-  color: $card2-textcolor;
+#menu-container .is-dropdown-submenu-parent > a:after {
+  border-color: white rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)!important; 
 }
 
-.card2-section h5 {
-  color: $card2-titulocolor;
-  text-transform: uppercase;
+
+#submenu-container {
+  font-weight: bold;
+  font-size: 36px;
+  background-color: #7FC4E9;
+  border: 0px;
+
 }
-button.hollow.button.button2 {
-  color:$btn2-textcolor;
-  border-color: $btn2-bordercolor; 
+#menu-container li a{
+  font-weight: bold;
+  font-size: 36px;
+  background-color:  #1879B1;
+  color: white;
+  border: 0px;
+}
+#menu-container li a:hover{
+  background-color:  #7FC4E9;
+  
+}
+.callout{
+  background-color: #1879B1;
+  border-width: 0px;
 }
 
-.orbit-caption {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    /* padding: 10px; */
-    position: absolute;
-    bottom: 50%;
-    /* vertical-align: top; */
-    /* width: 30%; */
-    /* margin-bottom: 0; */
-    /* margin-left: 40px; */
-    padding: 1rem;
-    background-color: transparent; 
-    color: #1779ba;
-    font-size: 30px;
-    text-align: center;
+#lineup-tabs{
+  background-color:#398BBB ;
+  color: white;
+  border: 0px;
+  border-radius: 40px;
 }
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+    background: #075E92;  
+}
+.tabs-title > a:focus, .tabs-title > a[aria-selected='false'] {
+    background: #398BBB;
+  
+}
+#lineup-tabs li a{
+  font-size: 24px;
+  color: white;
+}
+a#ios10-label {
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 780px){ 
+  #submenu-container {
+  font-size: 16px;
+  }
+  #menu-container li a{
+  font-size: 16px;
+  }
+  p {
+    font-size: 16;
+  }
+}
+
+
 
 
 
@@ -247,14 +237,7 @@ button.hollow.button.button2 {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-.card2 {
-  margin-bottom: 0px;
-  border-bottom: 0px;
 
-}
-.card2-section {
-  border-top: 0px;
-}
 }
 
 /* Medium and up */
